@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import React,  { Component, Fragment } from "react";
 
 class TimerSegment extends Component {
 
@@ -52,19 +52,19 @@ class TimerSegment extends Component {
             <div style={{display:'flex'}}>
                 <div style={{flex:1}}>
                     <h1 className="timer-counter" style={counterStyle}>{this.leadingZero(days)}</h1>
-                    <p style={labelStyle}>DAYS</p>
+                    <p style={labelStyle}>Days</p>
                 </div>
                 <div style={{flex:1}}>
                     <h1 className="timer-counter" style={counterStyle}>{this.leadingZero(hours)}</h1>
-                    <p style={labelStyle}>HOURS</p>
+                    <p style={labelStyle}>Hours</p>
                 </div>
                 <div style={{flex:1}}>
                     <h1 className="timer-counter" style={counterStyle}>{this.leadingZero(minutes)}</h1>
-                    <p style={labelStyle}>MINUTES</p>
+                    <p style={labelStyle}>Minutes</p>
                 </div>
                 <div style={{flex:1}}>
                     <h1 className="timer-counter" style={counterStyle}>{this.leadingZero(seconds)}</h1>
-                    <p style={labelStyle}>SECONDS</p>
+                    <p style={labelStyle}>Seconds</p>
                 </div>
             </div>
         </div>

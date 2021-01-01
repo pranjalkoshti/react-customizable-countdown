@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 
 class TimerSegment extends Component {
   leadingZero(num) {
@@ -6,7 +6,7 @@ class TimerSegment extends Component {
   }
 
   getTimeUntil(deadline) {
-    const time = Date.parse(deadline) + 540 * 60 * 1000 - Date.parse(new Date());
+    const time = Date.parse(deadline) - Date.parse(new Date());
 
     if (time < 0) {
       this.setState({
@@ -31,12 +31,13 @@ class TimerSegment extends Component {
 
   constructor(props) {
     super(props);
+    this.defaultDate = new Date(new Date().setDate(new Date().getDate() + 1));
     this.state = {
       days: 0,
       hours: 0,
       minutes: 0,
       seconds: 0,
-      deadline: this.props.startDate // deadline: this.props.startDate ? this.props.startDate : "April, 6, 2019"
+      deadline: this.props.date ? this.props.date : this.defaultDate // deadline: this.props.date ? this.props.date : "April, 6, 2019"
 
     };
   }
@@ -82,7 +83,7 @@ class TimerSegment extends Component {
       style: counterStyle
     }, this.leadingZero(days)), /*#__PURE__*/React.createElement("p", {
       style: labelStyle
-    }, "DAYS")), /*#__PURE__*/React.createElement("div", {
+    }, "Days")), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1
       }
@@ -91,7 +92,7 @@ class TimerSegment extends Component {
       style: counterStyle
     }, this.leadingZero(hours)), /*#__PURE__*/React.createElement("p", {
       style: labelStyle
-    }, "HOURS")), /*#__PURE__*/React.createElement("div", {
+    }, "Hours")), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1
       }
@@ -100,7 +101,7 @@ class TimerSegment extends Component {
       style: counterStyle
     }, this.leadingZero(minutes)), /*#__PURE__*/React.createElement("p", {
       style: labelStyle
-    }, "MINUTES")), /*#__PURE__*/React.createElement("div", {
+    }, "Minutes")), /*#__PURE__*/React.createElement("div", {
       style: {
         flex: 1
       }
@@ -109,7 +110,7 @@ class TimerSegment extends Component {
       style: counterStyle
     }, this.leadingZero(seconds)), /*#__PURE__*/React.createElement("p", {
       style: labelStyle
-    }, "SECONDS")))));
+    }, "Seconds")))));
   }
 
 }

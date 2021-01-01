@@ -32,12 +32,11 @@ import Counter from 'react-customizable-countdown';
 ReactDOM.render(
    <Counter 
         date="2021-01-10T14:48:00" 
-        timerStyle={{marginTop:'10px'}} 
-        counterStyle={{color:'goldenRod', fontSize:'2.em'}} 
-        labelStyle={{color:'grey',fontSize:'12px'}}
+        timerStyle={{marginTop:'10px', width:'20%'}} 
+        counterStyle={{fontSize:'15px', color:'white', border:'1px solid red', padding:'10px', margin:'5px', backgroundColor:'red'}} 
+        labelStyle={{color:'grey',fontSize:'12px', textTransform:'uppercase'}}
     /> ,
   document.getElementById('root')
-
 ```
 
 ### Props
