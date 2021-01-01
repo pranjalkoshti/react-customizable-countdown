@@ -1,13 +1,17 @@
 import { Component, Fragment } from "react";
 
 class TimerSegment extends Component {
+
+  defaultDate = new Date(new Date().setDate(new Date().getDate()+1))
+
   leadingZero(num) {
     return num < 10 ? "0" + num : num;
   }
 
   getTimeUntil(deadline) {
     const time =
-      Date.parse(deadline) + 540 * 60 * 1000 - Date.parse(new Date());
+      Date.parse(deadline) - Date.parse(new Date());
+
     if (time < 0) {
       this.setState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     } else {
@@ -26,8 +30,8 @@ class TimerSegment extends Component {
       hours: 0,
       minutes: 0,
       seconds: 0,
-      deadline: this.props.startDate
-      // deadline: this.props.startDate ? this.props.startDate : "April, 6, 2019"
+      deadline: this.props.date ? this.props.date : this.defaultDate
+      // deadline: this.props.date ? this.props.date : "April, 6, 2019"
     };
   }
 
