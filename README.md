@@ -3,7 +3,7 @@
 
 You can install the module via npm:
 
- `npm install react-customizable-countdown --save`
+ `npm install react-countdown-customizable --save`
 
 
 ### Usage
@@ -12,7 +12,7 @@ For using counter with standard styles -
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from 'react-customizable-countdown';
+import Counter from 'react-countdown-customizable';
  
 ReactDOM.render(
   <Counter 
@@ -27,7 +27,7 @@ For applying custom styles for labels, counter or timer component itself
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from 'react-customizable-countdown';
+import Counter from 'react-countdown-customizable';
  
 ReactDOM.render(
    <Counter 
