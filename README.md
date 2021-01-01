@@ -22,7 +22,7 @@ ReactDOM.render(
 );
 ```
 
-Applying custom styles for labels, counter or timer component itself 
+For applying custom styles for labels, counter or timer component itself 
 
 ```
 import React from 'react';
