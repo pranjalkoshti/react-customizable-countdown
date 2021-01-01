@@ -1,4 +1,4 @@
-###React Customizable Countdown
+### React Customizable Countdown
 
 
 You can install the module via npm:
@@ -6,7 +6,7 @@ You can install the module via npm:
  `npm install react-customizable-countdown --save`
 
 
-###Usage
+### Usage
 For using counter with standard styles - 
 
 ```
@@ -40,7 +40,7 @@ ReactDOM.render(
 
 ```
 
-###Props
+### Props
 
 | Name  | Type | Default |
 | ------------- | ------------- | ------------- | 
