@@ -49,7 +49,7 @@ class TimerSegment extends Component {
       <div style={timerStyle} >
           <div style={{padding:'0px',textAlign:'center', height:'100%',background:'none'}}  >
             <p style={{color: labelStyle.color ? labelStyle.color : 'grey', marginBottom:'0px'}}>STARTS IN</p>
-            <div style={{display:'flex'}}>
+            <div style={{display:'flex', justifyContent:'center'}}>
                 <div style={{flex:1}}>
                     <h1 className="timer-counter" style={counterStyle}>{this.leadingZero(days)}</h1>
                     <p style={labelStyle}>Days</p>

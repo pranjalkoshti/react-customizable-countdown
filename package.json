@@ -1,6 +1,6 @@
 {
   "name": "react-countdown-customizable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",
@@ -41,5 +41,10 @@
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-react": "^7.12.10"
-  }
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/pranjalkoshti/react-customizable-countdown"
+  },
+  "keywords":["react", "countdown", "customizable"]
 }
