@@ -39,7 +39,7 @@ ReactDOM.render(
   document.getElementById('root')
 ```
 ### Demo
-[live](https://codesandbox.io/s/strange-glitter-2biqw?file=/src/App.js);
+[live](https://codesandbox.io/s/strange-glitter-2biqw?file=/src/App.js)
 
 ### Props
 
