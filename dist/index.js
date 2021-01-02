@@ -72,7 +72,8 @@ class TimerSegment extends Component {
       }
     }, "STARTS IN"), /*#__PURE__*/React.createElement("div", {
       style: {
-        display: 'flex'
+        display: 'flex',
+        justifyContent: 'center'
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
